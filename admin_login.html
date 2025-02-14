@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <link rel="icon" href="/Cat-Hotel-Booking-System/assets/Logo-965f89c3.svg" />
+    <title>猫の幸せ-後台登入</title>
+    <script type="module" crossorigin src="/Cat-Hotel-Booking-System/assets/admin_login-961a6095.js"></script>
+    <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/sweetalert2.all-9f571157.js">
+    <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/admin_header-f6aa3d0c.js">
+    <link rel="stylesheet" href="/Cat-Hotel-Booking-System/assets/sweetalert2-a8ded770.css">
+  </head>
+  <body>
+    <!-- 後台登入頁面的導覽列只需要 logo 和回到前台連結就好，登入後才會顯示其他導覽列項目 -->
+    <header class="adminHeader bg-neutral03">
+      <div class="container">
+        <div class="row py-6">
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="admin_index.html">
+              <img
+                src="https://raw.githubusercontent.com/newhandarky/CaaaaatHappliyEverAfter/0e256f0b76088eb06998f784d1469dd6f7b5b1e3/assets/images/LogoHorizontal.svg"
+                alt="logo圖片"
+              />
+            </a>
+            <a class="" href="index.html">回到前台</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 在 admin_login.html 畫面把 admin_header.ejs 隱藏 -->
+    <div class="d-none">
+
+<header class="adminHeader bg-neutral03">
+    <div class="container">
+        <div class="row py-6">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="admin_index.html">
+                        <img src="/Cat-Hotel-Booking-System/assets/LogoHorizontal-582e8b6b.svg" alt="logo圖片">
+                    </a>
+                    
+                </div>
+                <div>
+                    <p class="welcome align-middle"></p>
+                </div>
+                <nav class="">
+                    <ul class="d-flex mb-0">
+                        <li>
+                            <a class="adminLink align-middle" href="admin_account.html">帳號管理</a>
+                        </li>
+                        <li class="ms-4">
+                            <a class="adminLink align-middle" href="admin_booking.html">訂單管理</a>
+                        </li>
+                        <li class="ms-4">
+                            <a class="adminLink align-middle" href="admin_rooms.html">客房管理</a>
+                        </li>
+                        <li class="ms-4">
+                            <a class="adminLink align-middle" href="admin_article.html">文章管理</a>
+                        </li>
+                        <li class="ms-4 logout">
+                            <a class="adminLink logout align-middle" href="#">登出</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+</header>
+</div>
+
+    <div
+      class="adminLoginWrap container d-flex flex-column justify-content-center align-items-center mt-16"
+    >
+      <h2 class="fs-2 mb-6">歡迎登入</h2>
+      <p class="errorText"></p>
+      <div class="row">
+        <form class="referenceNode">
+          <div class="col-12 mb-8">
+            <input
+              type="text"
+              class="form-control fs-5 p-4"
+              id="adminLoginAccount"
+              placeholder="請輸入信箱"
+              required
+            />
+          </div>
+          <div class="col-12 mb-8">
+            <input
+              type="text"
+              class="form-control fs-5 p-4"
+              id="adminLoginPassword"
+              placeholder="請輸入密碼"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <a role="button" class="adminLoginBtn fs-5 btn btn-success w-100 p-3">
+              登入
+            </a>
+          </div>
+          <p class="text-primary">
+            <small><a href="#">聯繫開發人員？</a></small>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    
+    
+  </body>
+</html>
+
+<!-- 補上驗證功能 -->

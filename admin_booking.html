@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫の幸せ-後台訂單功能頁</title>
+    <link rel="icon" href="/Cat-Hotel-Booking-System/assets/Logo-965f89c3.svg">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,700,0,200" />
+  <script type="module" crossorigin src="/Cat-Hotel-Booking-System/assets/admin_booking-e69b0ca1.js"></script>
+  <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/sweetalert2.all-9f571157.js">
+  <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/admin_header-f6aa3d0c.js">
+  <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/admin_config-2cf1d757.js">
+  <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/admin_searchBar-9f09012d.js">
+  <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/loginIsTimeUp-fc3c3921.js">
+  <link rel="stylesheet" href="/Cat-Hotel-Booking-System/assets/sweetalert2-a8ded770.css">
+</head>
+
+<body>
+    
+
+<header class="adminHeader bg-neutral03">
+    <div class="container">
+        <div class="row py-6">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="admin_index.html">
+                        <img src="/Cat-Hotel-Booking-System/assets/LogoHorizontal-582e8b6b.svg" alt="logo圖片">
+                    </a>
+                    
+                </div>
+                <div>
+                    <p class="welcome align-middle"></p>
+                </div>
+                <nav class="">
+                    <ul class="d-flex mb-0">
+                        <li>
+                            <a class="adminLink align-middle" href="admin_account.html">帳號管理</a>
+                        </li>
+                        <li class="ms-4">
+                            <a class="adminLink align-middle" href="admin_booking.html">訂單管理</a>
+                        </li>
+                        <li class="ms-4">
+                            <a class="adminLink align-middle" href="admin_rooms.html">客房管理</a>
+                        </li>
+                        <li class="ms-4">
+                            <a class="adminLink align-middle" href="admin_article.html">文章管理</a>
+                        </li>
+                        <li class="ms-4 logout">
+                            <a class="adminLink logout align-middle" href="#">登出</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+</header>
+
+        <main class="container mb-15">
+            <div class="row">
+                <div class="py-8">
+                    <h2>
+                        <a class="text-primary" href="./admin_index.html">後台首頁</a> > 訂單管理
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row adminSearchBar mb-8">
+    <div class="col-4 d-flex">
+        <div>
+            <input class="rounded-2 form-control inputBookingNumber" type="text" name="bookingNumber"
+                placeholder="請輸入訂單編號">
+        </div>
+        <div>
+            <button class="ms-6 btn btn-success d-flex align-items-center btnBookingNum">
+                依編號查詢
+                <span class="material-symbols-outlined ms-2 text-white">search</span>
+            </button>
+        </div>
+    </div>
+    <div class="col-1"></div>
+    <div class="d-flex col-7">
+        <div class="input-group adminSearchBar_startDate">
+            <span class="input-group-text">請選取起始日期</span>
+            <input type="date" name="startDate" class="form-control inputStartDate">
+        </div>
+        <div class="input-group ms-6">
+            <span class="input-group-text">請選取結束日期</span>
+            <input type="date" name="endDate" class="form-control inputEndDate">
+        </div>
+        <div class="d-flex justify-content-end text-nowrap">
+            <button class="ms-6 btn btn-success d-flex align-items-center btnDate">
+                依日期查詢
+                <span class="material-symbols-outlined ms-2 text-white">search</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+                <div class="row">
+                    <div>
+
+                        <div class="border border-2 rounded-2">
+                            <h2 class="adminBooingTitle p-8">訂單總覽</h2>
+                            <div class="d-flex justify-content-center mb-8">
+                                <div class="d-flex align-items-center">
+                                    <button
+                                        class="before btn btn-primary d-flex justify-content-center align-items-center">
+                                        <span class="material-symbols-outlined text-dark">
+                                            chevron_left
+                                        </span>
+                                    </button>
+                                </div>
+                                <h2 class="date mx-8"></h2>
+                                <div class="d-flex align-items-center">
+                                    <button
+                                        class="after btn btn-primary d-flex justify-content-center align-items-center">
+                                        <span class="material-symbols-outlined text-dark">
+                                            chevron_right
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 p-8 mb-8 border-end border-5">
+                                    <h2 class="text-center fs-4 mb-6">本月訂單共 <span class="thisMonth fs-2 fw-bold"></span>
+                                        筆</h2>
+                                    <div class="d-flex justify-content-center">
+                                        <button
+                                            class="btn btn-outline-primary border border-1 border-primary bookingList">查看當月訂單</button>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-8 mb-8 border-end border-5">
+                                    <h2 class="text-center fs-4 mb-6">本月住房率為 <span
+                                            class="bookingRate fs-2 fw-bold"></span> %</h2>
+                                    <div class="d-flex justify-content-center">
+                                        <button
+                                            class="btn btn-outline-primary border border-1 border-primary checkBookingTable">查看本月房況表</button>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-8 mb-8 ">
+                                    <h2 class="text-center fs-4 mb-6">本月已結帳總額為 <span
+                                            class="revenue fs-2 fw-bold"></span> 元</h2>
+                                    <div class="d-flex justify-content-center">
+                                        <button
+                                            class="btn btn-outline-primary border border-1 border-primary bookingTables">檢視房型住房比例</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 p-8 mb-8 border-end border-5">
+                                    <h2 class="text-center fs-4 mb-6 ">今日新進訂單共 <span
+                                            class="newBooking fs-2 fw-bold"></span> 筆</h2>
+                                    <div class="d-flex justify-content-center">
+                                        <button
+                                            class="btn btn-outline-primary border border-1 border-primary btnNewBooking">查看今日新進訂單</button>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-8 mb-8 border-end border-5">
+                                    <h2 class="text-center fs-4 mb-6">今日入住訂單共 <span
+                                            class="todayCheckIn fs-2 fw-bold"></span> 筆</h2>
+                                    <div class="d-flex justify-content-center">
+                                        <button
+                                            class="btn btn-outline-primary border border-1 border-primary btnTodayCheckIn">查看今日入住訂單</button>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-8 mb-8">
+                                    <h2 class="text-center fs-4 mb-6">今日退房訂單共 <span
+                                            class="todayCheckOut fs-2 fw-bold"></span> 筆</h2>
+                                    <div class="d-flex justify-content-center">
+                                        <button
+                                            class="btn btn-outline-primary border border-1 border-primary btnTodayCheckOut">查看今日退房訂單</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </main>
+        
+        
+</body>
+
+</html>

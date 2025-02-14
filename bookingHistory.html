@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>猫の幸せ-訂房紀錄</title>
+    <link rel="icon" href="/Cat-Hotel-Booking-System/assets/Logo-965f89c3.svg" />
+    <script type="module" crossorigin src="/Cat-Hotel-Booking-System/assets/bookingHistory-b8ebbfbc.js"></script>
+    <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/sweetalert2.all-9f571157.js">
+    <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/navbar-a9a887c0.js">
+    <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/aside-d7219df7.js">
+    <link rel="stylesheet" href="/Cat-Hotel-Booking-System/assets/sweetalert2-a8ded770.css">
+  </head>
+  <body>
+    <header class="header navbar navbar-expand-lg p-0">
+  <div class="navBar container p-0">
+    <a class="navbar-brand mx-5 my-3" href="index.html"
+      ><img src="/Cat-Hotel-Booking-System/assets/LogoHorizontal-582e8b6b.svg" alt="Logo"
+    /></a>
+
+    <!-- 汉堡菜单按钮 -->
+    <button
+      class="navbar-toggler mx-3"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto d-flex align-items-center">
+        <li class="nav-item mx-3 my-3">
+          <a id="aboutusNav" class="nav-link p-0" href="aboutus.html"
+            >關於我們</a
+          >
+        </li>
+        <li class="nav-item mx-3 my-3 roooms">
+          <a id="roomsNav" class="nav-link p-0" href="roooms.html"
+            >旅館介紹</a
+          >
+        </li>
+        <li class="nav-item mx-3 my-3 booking">
+          <a id="bookingNav" class="nav-link p-0" href="booking.html"
+            >線上訂房</a
+          >
+        </li>
+        <li class="nav-item mx-3 my-3 article">
+          <a id="articleNav" class="nav-link p-0" href="article.html"
+            >文章總覽</a
+          >
+        </li>
+        <li
+          id="memberBtn"
+          class="nav-item mx-3 my-3 primaryStrokeToFill-btn-primary"
+        >
+          <a
+            id="memberFunction"
+            class="nav-link p-0"
+            href="member.html"
+          >
+            <i class="bi bi-person"></i>會員功能
+          </a>
+        </li>
+        
+        <li id="navAside" class="nav-item mx-3 my-3 burgerAside d-lg-none d-block d-none"><aside class="aside h-100 d-flex flex-column align-items-center">
+  <a id="memberData" class="fs-3 my-3" href="member.html">
+    <div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconPerson-d055be06.svg" alt="iconPerson" />
+      <p>資料管理</p>
+    </div>
+  </a>
+
+  <a id="catData" class="fs-3 my-3" href="catData.html">
+    <div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconCat-bf0225b0.svg" alt="iconCat" />
+      <p>我的貓咪</p>
+    </div></a
+  >
+
+  <a id="bookingHistory" class="fs-3 my-3" href="bookingHistory.html"
+    ><div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconHouse-c374343d.svg" alt="iconHouse" />
+      <p>訂房紀錄</p>
+    </div></a
+  >
+
+  <a id="changePassword" class="fs-3 my-3" href="changePassword.html"
+    ><div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconLock-23433ab8.svg" alt="iconCatPaw" />
+      <p>修改密碼</p>
+    </div></a
+  >
+</aside>
+</li>
+
+    </div>
+  </div>
+</header>
+    <div class="container p-0">
+      <div class="row min-vh-100">
+        <div class="col-lg-3 d-none d-lg-block">
+          <aside class="aside h-100 d-flex flex-column align-items-center">
+  <a id="memberData" class="fs-3 my-3" href="member.html">
+    <div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconPerson-d055be06.svg" alt="iconPerson" />
+      <p>資料管理</p>
+    </div>
+  </a>
+
+  <a id="catData" class="fs-3 my-3" href="catData.html">
+    <div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconCat-bf0225b0.svg" alt="iconCat" />
+      <p>我的貓咪</p>
+    </div></a
+  >
+
+  <a id="bookingHistory" class="fs-3 my-3" href="bookingHistory.html"
+    ><div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconHouse-c374343d.svg" alt="iconHouse" />
+      <p>訂房紀錄</p>
+    </div></a
+  >
+
+  <a id="changePassword" class="fs-3 my-3" href="changePassword.html"
+    ><div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconLock-23433ab8.svg" alt="iconCatPaw" />
+      <p>修改密碼</p>
+    </div></a
+  >
+</aside>
+        </div>
+        <div class="col-lg-9">
+          <!-- 呈現載入提示畫面 -->
+          <div
+            id="loading"
+            class="loading w-100 h-100 d-flex justify-content-center align-items-center"
+          >
+            <img src="/Cat-Hotel-Booking-System/assets/catLoading-8f671394.gif" alt="catLoading" />
+          </div>
+
+          <div id="title" class="p-5 d-flex">
+            <h1>訂房紀錄</h1>
+          </div>
+
+          <!-- <h1>以下是切版測試</h1>
+          <div
+            class="bookingInfo d-flex justify-content-center align-items-center"
+          >
+            <div class="catBarContainer">
+              <div class="catEars">
+                <div class="catEar">
+                  <img src="../assets/images/catEar02.svg" alt="catEar02" />
+                </div>
+                <div class="catEar">
+                  <img src="../assets/images/catEar02.svg" alt="catEar02" />
+                </div>
+              </div>
+              <div class="catBarBorder mx-3">
+                <div class="catBarInfo d-flex flex-column">
+                  <div class="justify-content-center align-items-center">
+                    <div class="d-flex flex-sm-row flex-column mb-5">
+                      <h3 id="checkIn_${index}" class="d-inline-block">
+                        ${checkIn}
+                      </h3>
+                      <div class="d-flex justify-content-center mx-3">
+                        <img
+                          class="img-fluid d-sm-block d-none"
+                          src="../assets/icons/arrow.svg"
+                          alt="arrow"
+                        />
+                        <img
+                          class="img-fluid d-sm-none d-block"
+                          src="../assets/icons/arrowDown.svg"
+                          alt="arrow"
+                        />
+                      </div>
+
+                      <h3 id="checkOut_${index}" class="d-inline-block">
+                        ${checkOut}
+                      </h3>
+                    </div>
+                    <div class="d-flex flex-sm-row flex-column">
+                      <div class="d-flex flex-column">
+                        <div class="d-flex">
+                          <h3 id="roomType_${index}" class="roomType">
+                            ${name}
+                          </h3>
+
+                          <h4
+                            id="catsQuantity_${index}"
+                            class="mt-1 catsQuantity"
+                          >
+                            ${quantity}隻貓
+                          </h4>
+                        </div>
+                        <div class="d-flex">
+                          <h5 class="text-center">訂單編號</h5>
+                          <h5
+                            id="bookingId_${index}"
+                            class="text-center bookingId"
+                          >
+                            ${id}
+                          </h5>
+                        </div>
+                        <div class="d-flex">
+                          <h6 class="orderDate">下單日期</h6>
+                          <h6
+                            id="bookingId_${index}"
+                            class="orderDate bookingId"
+                          >
+                            ${bookingDate}
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-grow-5 ms-sm-5 ms-0">
+                        <h1 id="price_${index}" class="price">${price}NT</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="orderBtns">
+                  <div id="btntype" class="primaryFill-btn-primary">
+                    <button
+                      id="cancelBooking_${index}"
+                      data-catId="${id}"
+                      class="orderBtn"
+                    >
+                      取消訂單
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1>以上是切版測試</h1> -->
+          <!--input 按鈕自製模組-->
+          <div
+            id="bookingHistoryFilter"
+            class="d-flex justify-content-md-end justify-content-center"
+          >
+            <div class="catRoomInputContainer position-relative">
+              <div
+                id="catRoomInput_bookingHistoryFilter"
+                class="catRoomInput bookingHistoryFilter"
+              >
+                <div class="inputBar">
+                  <p class="fs-7 m-0">篩選</p>
+                  <div
+                    id="roomType"
+                    data-value="已預訂"
+                    class="position-relative"
+                  >
+                    <p>已預訂</p>
+                  </div>
+                </div>
+
+                <img
+                  class="icon"
+                  src="/Cat-Hotel-Booking-System/assets/iconArrowDown-5955a535.svg"
+                  alt="date_icon"
+                />
+              </div>
+              <div
+                id="selectType"
+                class="selectType d-flex flex-column position-absolute w-100"
+              >
+                <button value="已預訂" class="optionType room">已預訂</button>
+                <button value="已完成" class="optionType room">已完成</button>
+                <button value="已取消" class="optionType optionLast room">
+                  已取消
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="bookingInfo"
+            class="bookingInfo d-flex flex-column justify-content-center align-items-center"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- <h3 id="checkIn" class="checkDate">2023-12-10</h3>
+          <h3>→</h3>
+          <h3 id="checkOut" class="checkDate">2023-12-12</h3>
+          <h3 id="roomType" class="roomType">精緻房</h3>
+          <h5 id="bookingId" class="bookingId">訂單編號 401</h5>
+          <h1 id="price" class="price">1600</h1>
+          <h5 id="bookingDate" class="bookingDate">下單日期 2023-11-15</h5>
+          <a id="editBooking" class="editBooking" href="./editBooking.html"
+            >修改訂單</a
+          >
+          <button id="cancelBooking" class="cancelBooking">取消訂單</button> -->
+
+    <footer class="footer d-flex justify-content-center align-items-center">
+  <main class="d-inline-flex flex-column align-items-center">
+    <a href="index.html"
+      ><img
+        class="logoVertical"
+        src="/Cat-Hotel-Booking-System/assets/LogoVertical-064f7372.svg"
+        alt="LogoVertical"
+    /></a>
+
+    <br />
+    <h6>106 台北市大安區信義路三段 75 號 1 號 2 樓</h6>
+    <h6>02-2707-8877</h6>
+
+    <div class="icons">
+      <a href="https://www.facebook.com/?locale=zh_TW"
+        ><img
+          class="icon"
+          src="/Cat-Hotel-Booking-System/assets/iconFacebook-0111d5f8.svg"
+          alt="LogoVertical"
+      /></a>
+      <a href="https://www.instagram.com/"
+        ><img
+          class="icon"
+          src="/Cat-Hotel-Booking-System/assets/iconInstagram-e02ef77e.svg"
+          alt="LogoVertical"
+      /></a>
+    </div>
+  </main>
+</footer>
+
+    
+    
+    
+    
+  </body>
+</html>

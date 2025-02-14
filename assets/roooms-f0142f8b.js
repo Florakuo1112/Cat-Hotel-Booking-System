@@ -1,0 +1,1 @@
+import"./sweetalert2.all-9f571157.js";import"./navbar-a9a887c0.js";const e=document.getElementById("myVideo");e.removeAttribute("controls");e.addEventListener("ended",function(){e.play()});const o=document.getElementById("roomsNav");o.style.color="#FA863E";

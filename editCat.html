@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>猫の幸せ-貓咪編輯</title>
+    <link rel="icon" href="/Cat-Hotel-Booking-System/assets/Logo-965f89c3.svg" />
+    <script type="module" crossorigin src="/Cat-Hotel-Booking-System/assets/editCat-b4bfd201.js"></script>
+    <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/sweetalert2.all-9f571157.js">
+    <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/navbar-a9a887c0.js">
+    <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/aside-d7219df7.js">
+    <link rel="modulepreload" crossorigin href="/Cat-Hotel-Booking-System/assets/index-a4e39586.js">
+    <link rel="stylesheet" href="/Cat-Hotel-Booking-System/assets/sweetalert2-a8ded770.css">
+  </head>
+  <body>
+    <header class="header navbar navbar-expand-lg p-0">
+  <div class="navBar container p-0">
+    <a class="navbar-brand mx-5 my-3" href="index.html"
+      ><img src="/Cat-Hotel-Booking-System/assets/LogoHorizontal-582e8b6b.svg" alt="Logo"
+    /></a>
+
+    <!-- 汉堡菜单按钮 -->
+    <button
+      class="navbar-toggler mx-3"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto d-flex align-items-center">
+        <li class="nav-item mx-3 my-3">
+          <a id="aboutusNav" class="nav-link p-0" href="aboutus.html"
+            >關於我們</a
+          >
+        </li>
+        <li class="nav-item mx-3 my-3 roooms">
+          <a id="roomsNav" class="nav-link p-0" href="roooms.html"
+            >旅館介紹</a
+          >
+        </li>
+        <li class="nav-item mx-3 my-3 booking">
+          <a id="bookingNav" class="nav-link p-0" href="booking.html"
+            >線上訂房</a
+          >
+        </li>
+        <li class="nav-item mx-3 my-3 article">
+          <a id="articleNav" class="nav-link p-0" href="article.html"
+            >文章總覽</a
+          >
+        </li>
+        <li
+          id="memberBtn"
+          class="nav-item mx-3 my-3 primaryStrokeToFill-btn-primary"
+        >
+          <a
+            id="memberFunction"
+            class="nav-link p-0"
+            href="member.html"
+          >
+            <i class="bi bi-person"></i>會員功能
+          </a>
+        </li>
+        
+        <li id="navAside" class="nav-item mx-3 my-3 burgerAside d-lg-none d-block d-none"><aside class="aside h-100 d-flex flex-column align-items-center">
+  <a id="memberData" class="fs-3 my-3" href="member.html">
+    <div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconPerson-d055be06.svg" alt="iconPerson" />
+      <p>資料管理</p>
+    </div>
+  </a>
+
+  <a id="catData" class="fs-3 my-3" href="catData.html">
+    <div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconCat-bf0225b0.svg" alt="iconCat" />
+      <p>我的貓咪</p>
+    </div></a
+  >
+
+  <a id="bookingHistory" class="fs-3 my-3" href="bookingHistory.html"
+    ><div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconHouse-c374343d.svg" alt="iconHouse" />
+      <p>訂房紀錄</p>
+    </div></a
+  >
+
+  <a id="changePassword" class="fs-3 my-3" href="changePassword.html"
+    ><div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconLock-23433ab8.svg" alt="iconCatPaw" />
+      <p>修改密碼</p>
+    </div></a
+  >
+</aside>
+</li>
+
+    </div>
+  </div>
+</header>
+    <div class="container p-0">
+      <div class="row min-vh-100">
+        <div class="col-lg-3 d-none d-lg-block">
+          <aside class="aside h-100 d-flex flex-column align-items-center">
+  <a id="memberData" class="fs-3 my-3" href="member.html">
+    <div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconPerson-d055be06.svg" alt="iconPerson" />
+      <p>資料管理</p>
+    </div>
+  </a>
+
+  <a id="catData" class="fs-3 my-3" href="catData.html">
+    <div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconCat-bf0225b0.svg" alt="iconCat" />
+      <p>我的貓咪</p>
+    </div></a
+  >
+
+  <a id="bookingHistory" class="fs-3 my-3" href="bookingHistory.html"
+    ><div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconHouse-c374343d.svg" alt="iconHouse" />
+      <p>訂房紀錄</p>
+    </div></a
+  >
+
+  <a id="changePassword" class="fs-3 my-3" href="changePassword.html"
+    ><div class="d-flex justify-content-center">
+      <img class="me-2" src="/Cat-Hotel-Booking-System/assets/iconLock-23433ab8.svg" alt="iconCatPaw" />
+      <p>修改密碼</p>
+    </div></a
+  >
+</aside>
+        </div>
+        <div class="col-lg-9">
+          <!-- 呈現載入提示畫面 -->
+          <div
+            id="loading"
+            class="loading w-100 h-100 d-flex justify-content-center align-items-center"
+          >
+            <img src="/Cat-Hotel-Booking-System/assets/catLoading-8f671394.gif" alt="catLoading" />
+          </div>
+
+          <div
+            id="editCat"
+            class="d-flex justify-content-center align-items-center m-5"
+          >
+            <div
+              class="d-inline-flex flex-column justify-content-center align-items-center"
+            >
+              <form id="editCatFrom" class="editCatFrom" method="GET">
+                <h1 class="text-center">編輯貓咪</h1>
+                <div id="catPhotoPresent" class="PhotoPresent">
+                  <img src="/Cat-Hotel-Booking-System/assets/photoFrame-4ab88e66.svg" alt="photoFrame" />
+                  <div>
+                    <img
+                      id="catPhoto"
+                      src="https://i.imgur.com/slCGtuf.png"
+                      alt="貓咪照片"
+                    />
+                  </div>
+                </div>
+                <div class="selectImgFile">
+                  <label for="myCatFile">上傳照片</label>
+                  <input id="myCatFile" type="file" />
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center m-1 py-3"
+                >
+                  <label for="catName">姓名：</label>
+                  <input
+                    id="catName"
+                    class="form-control"
+                    type="text"
+                    name="name"
+                    placeholder="請輸入姓名"
+                    required
+                  />
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center m-1 py-3"
+                >
+                  <label>性別：</label>
+                  <div id="gender" class="form-control my-3 gender">
+                    <div>
+                      <input
+                        id="catMale"
+                        class="radio mx-1"
+                        type="radio"
+                        name="catGender"
+                        value="male"
+                        required
+                      />
+                      <label for="catMale">男</label>
+                    </div>
+
+                    <div>
+                      <input
+                        id="catFemale"
+                        class="radio mx-1"
+                        type="radio"
+                        name="catGender"
+                        value="female"
+                        required
+                      />
+                      <label for="catFemale">女</label>
+                    </div>
+
+                    <div>
+                      <input
+                        id="catOther"
+                        class="radio mx-1"
+                        type="radio"
+                        name="catGender"
+                        value="other"
+                        required
+                      />
+                      <label for="catOther">其他</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center m-1 py-3"
+                >
+                  <label for="catBirthday">生日：</label>
+                  <input
+                    id="catBirthday"
+                    class="form-control"
+                    type="text"
+                    placeholder="請輸入生日"
+                    name="catBirthday"
+                    required
+                  />
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center m-1 py-3"
+                >
+                  <label for="catBreeds">品種：</label>
+                  <input
+                    id="catBreeds"
+                    class="form-control"
+                    type="text"
+                    name="phone"
+                    placeholder="請輸入品種"
+                    required
+                  />
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center m-1 py-3"
+                >
+                  <label for="catColors">花色：</label>
+                  <input
+                    id="catColors"
+                    class="form-control"
+                    type="text"
+                    placeholder="請輸入花色"
+                    name="address"
+                    required
+                  />
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center m-1 py-3"
+                >
+                  <label for="catWeight">體重：</label>
+                  <input
+                    id="catWeight"
+                    class="form-control"
+                    type="number"
+                    placeholder="請輸入體重"
+                    name="weight"
+                    step="0.1"
+                    required
+                  />
+                </div>
+
+                <div
+                  class="btns d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="primaryStroke-btn-primary m-2">
+                    <button id="finishEdit" type="submit" class="finishEdit">
+                      完成編輯
+                    </button>
+                  </div>
+                  <div class="primaryFill-btn-primary m-2">
+                    <a id="cancelEdit" class="cancelEdit" href="./catData.html"
+                      >取消編輯</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer d-flex justify-content-center align-items-center">
+  <main class="d-inline-flex flex-column align-items-center">
+    <a href="index.html"
+      ><img
+        class="logoVertical"
+        src="/Cat-Hotel-Booking-System/assets/LogoVertical-064f7372.svg"
+        alt="LogoVertical"
+    /></a>
+
+    <br />
+    <h6>106 台北市大安區信義路三段 75 號 1 號 2 樓</h6>
+    <h6>02-2707-8877</h6>
+
+    <div class="icons">
+      <a href="https://www.facebook.com/?locale=zh_TW"
+        ><img
+          class="icon"
+          src="/Cat-Hotel-Booking-System/assets/iconFacebook-0111d5f8.svg"
+          alt="LogoVertical"
+      /></a>
+      <a href="https://www.instagram.com/"
+        ><img
+          class="icon"
+          src="/Cat-Hotel-Booking-System/assets/iconInstagram-e02ef77e.svg"
+          alt="LogoVertical"
+      /></a>
+    </div>
+  </main>
+</footer>
+    
+    
+    
+    
+  </body>
+</html>
