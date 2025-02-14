@@ -1,0 +1,18 @@
+.addNewBtn {
+  &:hover {
+    color: white !important;
+  }
+}
+.adminRoomList {
+  img {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    object-position: top center;
+  }
+  a {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

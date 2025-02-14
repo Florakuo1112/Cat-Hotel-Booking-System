@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>猫の幸せ-會員編輯</title>
+    <link rel="icon" href="../assets/icons/Logo.svg" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container p-0">
+      <div class="row min-vh-100">
+        <div class="col-lg-3 d-none d-lg-block">
+          <%- include('./layout/aside'); -%>
+        </div>
+        <div class="col-lg-9">
+          <!-- 呈現載入提示畫面 -->
+          <div
+            id="loading"
+            class="loading w-100 h-100 d-flex justify-content-center align-items-center"
+          >
+            <img src="../assets/icons/catLoading.gif" alt="catLoading" />
+          </div>
+
+          <div
+            id="editMember"
+            class="d-flex justify-content-center align-items-center m-5"
+          >
+            <div
+              class="d-inline-flex flex-column justify-content-center align-items-center"
+            >
+              <form id="editMemberFrom" class="editMemberFrom" method="GET">
+                <h1 class="text-center">編輯個人資料</h1>
+                <div id="userPhotoPresent" class="PhotoPresent">
+                  <img src="../assets/images/photoFrame.svg" alt="photoFrame" />
+                  <div>
+                    <img id="photo" src="" alt="會員照片" />
+                  </div>
+                </div>
+                <div class="selectImgFile">
+                  <label for="myFile">上傳照片</label>
+                  <input id="myFile" type="file" />
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center m-3 py-3"
+                >
+                  <label for="name">姓名：</label>
+                  <input
+                    id="name"
+                    class="form-control"
+                    type="text"
+                    name="name"
+                    placeholder="請輸入姓名"
+                    value=""
+                    required
+                  />
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center m-3 py-3"
+                >
+                  <label for="">性別</label>
+                  <div id="gender" class="form-control my-3 gender">
+                    <div>
+                      <input
+                        id="male"
+                        class="radio mx-1"
+                        type="radio"
+                        name="gender"
+                        value="male"
+                        required
+                      />
+                      <label class="fs-6" for="male">男</label>
+                    </div>
+
+                    <div>
+                      <input
+                        id="female"
+                        class="radio mx-1"
+                        type="radio"
+                        name="gender"
+                        value="female"
+                        required
+                      />
+                      <label class="fs-6" for="female">女</label>
+                    </div>
+
+                    <div>
+                      <input
+                        id="other"
+                        class="radio mx-1"
+                        type="radio"
+                        name="gender"
+                        value="other"
+                        required
+                      />
+                      <label class="fs-6" for="other">其他</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center m-3 py-3"
+                >
+                  <label for="birthday">生日：</label>
+                  <input
+                    id="birthday"
+                    class="form-control"
+                    type="text"
+                    placeholder="請輸入生日"
+                    name="birthday"
+                    value=""
+                    required
+                  />
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center m-3 py-3"
+                >
+                  <label for="phone">電話：</label>
+                  <input
+                    id="phone"
+                    class="form-control"
+                    type="number"
+                    placeholder="請輸入電話"
+                    name="phone"
+                    value=""
+                    required
+                  />
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center m-3 py-3"
+                >
+                  <label for="address">地址：</label>
+                  <input
+                    id="address"
+                    class="form-control"
+                    type="text"
+                    placeholder="請輸入地址"
+                    name="address"
+                    value=""
+                    required
+                  />
+                </div>
+
+                <br />
+                <div
+                  class="btns d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="primaryStroke-btn-primary m-2">
+                    <button id="finishEdit" type="submit" class="finishEdit">
+                      完成編輯
+                    </button>
+                  </div>
+                  <div class="primaryFill-btn-primary m-2">
+                    <a id="cancelEdit" class="cancelEdit" href="./member.html"
+                      >取消編輯</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../js/navbar.js"></script>
+    <script type="module" src="../js/aside.js"></script>
+    <script type="module" src="../js/editMember.js"></script>
+  </body>
+</html>

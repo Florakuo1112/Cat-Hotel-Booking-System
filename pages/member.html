@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>猫の幸せ-會員頁面</title>
+    <link rel="icon" href="../assets/icons/Logo.svg" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container p-0">
+      <div class="row min-vh-100">
+        <div class="col-lg-3 d-none d-lg-block">
+          <%- include('./layout/aside'); -%>
+        </div>
+        <div class="col-lg-9">
+          <!-- 呈現載入提示畫面 -->
+          <div
+            id="loading"
+            class="loading w-100 h-100 d-flex justify-content-center align-items-center"
+          >
+            <img src="../assets/icons/catLoading.gif" alt="catLoading" />
+          </div>
+
+          <div class="d-flex flex-column">
+            <div
+              class="menberData d-flex flex-lg-row flex-column justify-content-center align-items-center"
+            >
+              <div
+                id="userDataPresent"
+                class="userDataPresent flex-grow-1 position-relative d-flex justify-content-center"
+              >
+                <div class="w-10 d-inline-flex flex-column">
+                  <h1 id="name" class="name d-inline-block"></h1>
+                  <ul class="list-inline d-inline-block">
+                    <li id="email" class="my-3"></li>
+                    <li id="gender" class="my-3"></li>
+                    <li id="birthday" class="my-3"></li>
+                    <li id="address" class="my-3"></li>
+                    <li id="phone" class="my-3"></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="userPhotoPresent" class="PhotoPresent">
+                <img src="../assets/images/photoFrame.svg" alt="photoFrame" />
+                <div>
+                  <img id="photo" src="" alt="會員照片" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="menberBtns d-flex flex-column justify-content-around align-items-center"
+            >
+              <div class="menberBtn primaryStroke-btn-primary">
+                <a id="editMember" href="editMember.html">編輯會員資料</a>
+              </div>
+              <div class="menberBtn primaryFill-btn-primary">
+                <button id="signout" class="signout">登出</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../js/navbar.js"></script>
+    <script type="module" src="../js/aside.js"></script>
+    <script type="module" src="../js/memberData.js"></script>
+  </body>
+</html>
